@@ -1,0 +1,14 @@
+{
+    "common": {
+        "ok": "Ok",
+        "submit": "Submit"
+    },
+    "main": {
+        "title": "Main title",
+        "info": "Main info"
+    },
+    "wizard": {
+        "title": "Wizard title",
+        "info": "Wizard info"
+    }
+}
