@@ -4,8 +4,17 @@ a@b framework - Internationalization
 ## Locales
 ### NodeJS use
 	const { Locales } = require("aab-intl"),
-		  locales = new Locales("./locales"),
-		  terms = locales.get("fr-CA", "welcomepage");
+	      locales = new Locales("./locales"),
+	      terms = locales.get("fr-CA", "welcomepage");
+
+#### locales = new Locales( "./locales" )
+In the example above, the root folder is **locales**. When relative, absolute path is based on **process.cwd()**. You can find an example in **test/locales** directory.
+
+#### locales.locales
+This property returns a Set of defined locales having a translation file or defined in **map.json** file.
+
+#### locales.get( locale, key )
+This methods returns an object of terms defined for ui key.
 
 ### Define locales
 #### root directory
@@ -56,16 +65,6 @@ You have Brazilian and Portuguese translators and you want a fallback between la
 		"pt-BR": [ "pt", "pt-PT", "en" ],
 	}
 Language order defines priority.
-
-### Common use
-#### locales = new Locales( "./locales" )
-In the example above, the root folder is **locales**. When relative, absolute path is based on **process.cwd()**. You can find an example in **test/locales** directory.
-
-#### locales.locales
-This property returns a Set of defined locales having a translation file or defined in **map.json** file.
-
-#### locales.get( locale, key )
-This methods returns an object of terms defined for ui key.
 
 ### further methods & properties
 #### locales.keymap
