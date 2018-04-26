@@ -66,7 +66,7 @@ You have Brazilian and Portuguese translators and you want a fallback between la
 	}
 Language order defines priority.
 
-### further methods & properties
+### Further methods & properties
 #### locales.keymap
 **keymap.json** file computed: terms and mapping are inverted to optimize search.
 
